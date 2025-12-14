@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__sherlock-mcp-server__execute_mongodb_command"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "news-mcp-server-vnexpress",
+  "version": "1.0.1",
+  "description": "MCP Server for crawling and reading news from VnExpress",
+  "main": "./dist/cli.js",
+  "bin": {
+    "news-mcp-server": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsup --dts",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/cli.js",
+    "dev": "node --watch index.js",
+    "inspect": "pnpx @modelcontextprotocol/inspector"
+  },
+  "keywords": [
+    "mcp",
+    "news",
+    "VnExpress"
+  ],
+  "author": "Stellar Hold",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "cheerio": "^1.1.2",
+    "dotenv": "^16.4.7",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
